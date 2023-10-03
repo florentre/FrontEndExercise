@@ -1,0 +1,476 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(247, 248, 249);
+}
+/* Zhvillimi i portfolios se pari per mobile(375x460) */
+.header{
+    position: fixed;
+    top: 0%;
+    width: 100vw;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(234, 241, 243);
+}
+
+.nav_logo{
+    padding: 20px;
+    background: transparent;
+}
+.nav_logo a{
+    text-decoration: none;
+    color: black;
+    font-size: 27px;
+    background: transparent;
+    
+}
+.nav_menu{
+    display: none;
+}
+.nav_burger{
+    padding: 20px;
+    background-color: transparent;
+}
+.nav_burger div{
+    width: 30px;
+    height: 5px;
+    background-color: rgb(21, 24, 75);
+    margin: 6px 0;
+    border-radius: 15px;
+}
+
+/* home */
+.home div{
+    margin-top: 50px;
+}
+.home_title {
+    padding-top:40px ;
+    font-size: 30px;
+    text-align: center;
+}
+.home_title h1{
+    margin-bottom: 30px;
+}
+#home_button{
+    
+    text-decoration: none;
+    font-size: 18px;
+    background-color: rgb(0, 0, 137);
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+}
+#name-color{
+    color: rgb(50, 50, 155);
+}
+.home_media{
+    display: flex;
+    justify-content: center;
+}
+.fa {
+  padding: 20px;
+  text-decoration: none;
+}
+.fa-facebook {
+  color: rgb(59, 53, 129);
+}
+.fa-twitter {
+  color: rgb(70, 155, 174);
+}
+.fa-instagram{
+    color: black;
+}
+.home_img {
+    display: none;
+}
+
+/* about section */
+
+
+.about-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-title{
+    width: 100vw;
+    color: rgb(50, 50, 169);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    padding: 10px;
+}
+hr{
+    margin-top: 10px;
+    width: 70px;
+    height: 3px;
+    background-color: rgb(97, 63, 177);
+}
+.about_img img{
+    width: 160px;
+    height: 210px;
+    border-radius: 20px;
+}
+.about_desc{
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about_desc p{
+    margin: 10px;
+    font-size: 16px;
+    font-style: initial;
+    font-weight: bolder;
+    color: rgb(8, 8, 68);
+    text-align: center;
+}
+.about_desc h2{
+    color: rgb(24, 24, 104);
+}
+
+.skills-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.professional_skill{
+    width: 375px;
+    height: auto;
+    background-color: rgb(236, 239, 239);
+}
+.professional_skill div,i{
+    background: transparent;
+}
+.skills_data{
+    width: 90%;
+    height: 50px;
+    border: 1px solid rgb(197, 217, 223);
+    margin: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.skills_data_name i{
+    
+    padding-right: 10px;
+}
+
+.skills_img img{
+    width: 300px;
+    height: 320px;
+}
+.skills_img{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+/* work-section */
+
+.work_section{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.work_item{
+    margin-top: 40px;
+}
+
+.work_item img{
+    width: 200px;
+    height: 220px;
+}
+
+.contact_form{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.contact_input{
+    margin:15px;
+    width: auto;
+    height: 40px;
+    border-radius: 15px;
+    padding-left: 10px;
+    border: 1px solid rgb(196, 196, 223);
+}
+
+#contact_textarea{
+    height: 200px;
+    padding-top: 10px;
+}
+#contact_button{
+    width: 80px;
+    padding: 0px;
+    background-color: blue;
+    color: wheat;
+}
+
+.footer{
+    width: 100vw;
+    height: 150px;
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(33, 33, 61);
+    font-size: 16px;
+}
+.footer *{
+    background:transparent;
+}
+.footer_media a{
+    color:white;
+}
+
+/* Responsive for Tablet */
+
+/* Tabled Portrait */
+@media screen and (min-width: 768px) {
+    
+   .nav_burger{
+    display: none;
+   }
+   .nav_menu{
+    display: contents;
+}
+.nav_menu ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.nav_menu a{
+    padding: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(8, 8, 77);
+}
+.nav_menu li:hover{
+    background-color: rgb(205, 223, 226);
+    border-radius: 10px;
+}
+.nav_menu *{
+    background: transparent;
+}
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.home_img{
+    width: 45vw;
+    display: contents;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home_img img{
+    width: 270px;
+    height: 320px;
+    border-radius: 15px;
+}
+.about-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+.about_desc p{
+    padding: 40px;
+}
+.skills-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px;
+}
+.work_section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+.contact_form{
+    width: 400px;
+}
+.contact_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+
+/* Responsive for Laptop large */
+@media screen and (min-width: 1440px) {
+    
+    .home_media a{
+        font-size: 30px;
+    }
+    .home_img img{
+        width: 400px;
+        height: 450px;
+    }
+    .home{
+        height: 45vw;
+    }
+
+    .about_img img{
+        width: 400px;
+        height: 450px;
+    }
+    .about_desc p{
+        font-size: 25px;
+    }
+    .about_desc {
+        font-size: 25px;
+    }
+    .skills-info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 25px;
+    }
+    .professional_skill{
+        width: 500px;
+    }
+    .skills_data{
+        height: 60px;
+        font-size: 25px;
+    }
+    .skills_img img{
+        width: 500px;
+        height: 520px;
+    }
+    
+    .work_item img{
+        width: 400px;
+        height: 420px;
+    }
+    
+
+.contact_input{
+    width: 500px;
+    height: 60px;
+    font-size: 20px;
+   }
+
+#contact_button{
+    width: 120px;
+}
+.footer{
+    font-size: 25px;
+}
+.section-title{
+   font-size: 25px;
+}
+hr{
+    margin-top: 18px;
+    width: 100px;
+   }
+   .nav_menu a{
+    font-size: 30px;
+   }
+   .nav_menu li:hover{
+    background-color: rgb(205, 223, 226);
+    border-radius: 10px;
+}
+}
+
+/* Responsive for Laptop large */
+@media screen and (min-width: 1300px) {
+    
+    .home_media a{
+        font-size: 30px;
+    }
+    .home_img img{
+        width: 400px;
+        height: 450px;
+    }
+    .home{
+        height: 45vw;
+    }
+
+    .about_img img{
+        width: 400px;
+        height: 450px;
+    }
+    .about_desc p{
+        font-size: 25px;
+    }
+    .about_desc {
+        font-size: 25px;
+    }
+    .skills-info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 25px;
+    }
+    .professional_skill{
+        width: 500px;
+    }
+    .skills_data{
+        height: 60px;
+        font-size: 25px;
+    }
+    .skills_img img{
+        width: 500px;
+        height: 520px;
+    }
+    
+    .work_item img{
+        width: 400px;
+        height: 420px;
+    }
+    
+
+.contact_input{
+    width: 500px;
+    height: 60px;
+    font-size: 20px;
+   }
+
+#contact_button{
+    width: 120px;
+}
+.footer{
+    font-size: 25px;
+}
+.section-title{
+   font-size: 25px;
+}
+hr{
+    margin-top: 18px;
+    width: 100px;
+   }
+   .nav_menu a{
+    font-size: 30px;
+   }
+   .nav_menu li:hover{
+    background-color: rgb(205, 223, 226);
+    border-radius: 10px;
+}
+}
